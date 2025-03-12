@@ -31,19 +31,19 @@ The L-shaped method is a decomposition algorithm for solving two-stage stochasti
 
 This repository contains several Python files that work together:
 
-1. **main.py**: Entry point for running the algorithm
-2. **l_shaped_method.py**: Implements the main L-shaped method algorithm
-3. **master_problem.py**: Handles the master problem and optimality cuts
-4. **subproblems.py**: Solves the second-stage recourse problems and processes dual values
-5. **stochastic_problem.py**: Contains problem data and helper functions
-6. **SimplexMultipliers.py**: Solves LPs and extracts dual values
-7. **workflow.py**: Provides detailed explanation of the algorithm and implementation
+1. main.py: Entry point for running the algorithm
+2. l_shaped_method.py: Implements the main L-shaped method algorithm
+3. master_problem.py: Handles the master problem and optimality cuts
+4. subproblems.py: Solves the second-stage recourse problems and processes dual values
+5. stochastic_problem.py: Contains problem data and helper functions
+6. SimplexMultipliers.py: Solves LPs and extracts dual values
+7. workflow.py: Provides detailed explanation of the algorithm, assumptions, and implementation
 
 ## Implementation Details
 
 ### Dual Value Processing
 
-The core challenge in this implementation is correctly processing the dual values (simplex multipliers) from the LP solver. Our approach:
+The core challenge in this implementation is correctly processing the dual values (simplex multipliers) from the LP solver. This approach:
 
 1. Extract raw dual information from the solver
 2. Transform this information into the format required by the L-shaped method

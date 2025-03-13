@@ -64,11 +64,7 @@ def analyze_problem_structure():
             # 8y1 + 5y2 ≤ 80x2
             # 0 ≤ y1 ≤ d1
             # 0 ≤ y2 ≤ d2
-            
-            # You would need a proper LP solver to find the exact solution
-            # For demonstration, we'll approximate with a simple heuristic
-            # (This will only work for this specific problem structure)
-            
+ 
             # Try to maximize y1 and y2 based on the stronger constraint
             max_y1 = min(d1, rhs[0]/6, rhs[1]/8)
             max_y2 = min(d2, (rhs[0] - 6*max_y1)/10, (rhs[1] - 8*max_y1)/5)

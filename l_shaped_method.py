@@ -1,5 +1,8 @@
 """
 This module implements the L-shaped method algorithm with detailed output.
+
+When it says "IF VERBOSE" that checks to see whether or not the problem should print... it's declared in main
+
 """
 import pyomo.environ as pyo
 from master_problem import solve_master_problem
